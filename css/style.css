@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.main {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  width: 18rem;
+  height: auto;
+  margin: 2em 0;
+  padding: 1em;
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cardImage {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.cardImage .mainImg {
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: auto;
+}
+
+.imgFilter {
+  background-color: rgba(0, 255, 247, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.cardImage:hover .imgFilter {
+  display: flex;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.cardProduct .productTitle {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
+
+.cardProduct .productDescription {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.4;
+  margin: 1em 0;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-top: 1.6em;
+}
+
+.productInfoLeft {
+  color: hsl(178, 100%, 50%);
+}
+
+.productInfoRight {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  background-color: hsl(215, 51%, 70%);
+  height: 0.05em;
+  margin-bottom: 0.8em;
+  border: none;
+}
+
+.cardAuthor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.cardAuthor img {
+  width: 30px;
+  object-fit: contain;
+  flex-basis: 10%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.cardAuthor span {
+  flex-basis: 90%;
+  color: hsl(215, 51%, 70%);
+}
+.cardAuthor .authorName {
+  margin-left: 0.5em;
+  color: hsl(0, 0%, 100%);
+}
+
+.cardAuthor .authorName:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+svg {
+  margin-right: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    margin: 1rem;
+  }
+}
